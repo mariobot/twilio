@@ -1,0 +1,40 @@
+﻿@model Twilio.Message
+
+@{
+    ViewBag.Title = "GetMessageById";
+    Layout = "~/Views/Shared/_Skeleton.cshtml";
+}
+
+<h2></h2>
+
+@if (ViewBag.temp != null)
+{
+    var tmp = (Twilio.Message)(ViewBag.temp);
+    <fieldset>
+        <label>Sid - ID</label>
+        <h3>@tmp.Sid</h3>
+        <label>Estado</label>
+        <h3>@tmp.Status</h3>
+        <label>Fecha de Creacion</label>
+        <h3>@tmp.DateCreated</h3>
+        <label>Fecha en la que fue enviado: </label>
+        <h3>@tmp.DateSent</h3>
+        <label>Error Code: </label>
+        <h3>@tmp.ErrorCode</h3>
+        <label>Mensaje de Error: </label>
+        <h3>@tmp.ErrorMessage</h3>
+        <label>Precio</label>
+        <h3>@tmp.Price</h3>
+        <label>Destinatario</label>
+        <h3>@tmp.To</h3>
+        <label>URL</label>
+        <h6>@tmp.Uri</h6>
+        <label>Api Version</label>
+        <h3>@tmp.ApiVersion</h3>
+        <label>AccountSid</label>
+        <h3>@tmp.AccountSid</h3>
+        <hr />
+        <a href="@String.Format("https://api.twilio.com{0}", tmp.Uri)" class="button">JSON link</a>
+        <hr />
+    </fieldset>
+}

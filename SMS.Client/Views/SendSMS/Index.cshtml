@@ -1,0 +1,62 @@
+﻿@model SMS.Client.Models.MessageToSend
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Skeleton.cshtml";
+}
+
+<h2>Envia un Mensaje</h2>
+
+<div class="row" >
+    <div class="six column">
+        @using (Html.BeginForm("SendMessage", "SendSMS", FormMethod.Post))
+        {
+            <fieldset>
+                <label>Destinatario: </label>
+                @Html.TextBoxFor(Model => Model.to)
+                <label>Remitente: </label>
+                @Html.TextBoxFor(Model => Model.from)
+                <label>Cuerpo del Mensaje: </label>
+                @Html.TextBoxFor(Model => Model.body)
+                <label>MediaURL: </label>
+                @Html.TextBoxFor(Model => Model.MediaURL)
+                <input type="submit" value="Enviar SMS" />
+            </fieldset>
+        }
+    </div>
+    <div class="six column">
+        @if (ViewBag.temp != null)
+        {
+            var tmp = (Twilio.Message)(ViewBag.temp);
+            <fieldset>
+                <label>Sid - ID</label>
+                @tmp.Sid
+                <label>Estado</label>
+                @tmp.Status
+                <label>Fecha de Creacion</label>
+                @tmp.DateCreated
+                <label>Fecha en la que fue enviado: </label>
+                @tmp.DateSent
+                <label>Error Code: </label>
+                @tmp.ErrorCode
+                <label>Mensaje de Error: </label>
+                @tmp.ErrorMessage
+                <label>Precio</label>
+                @tmp.Price
+                <label>Destinatario</label>
+                @tmp.To
+                <label>URL</label>
+                @tmp.Uri
+                <label>Api Version</label>
+                @tmp.ApiVersion
+                <label>AccountSid</label>
+                @tmp.AccountSid
+            </fieldset>
+        }
+    </div>
+</div>
+
+
+
+
