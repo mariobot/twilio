@@ -29,3 +29,5 @@ c:\users\juanguillermo\documents\visual studio 2013\Projects\SMS.Client\SMS.Clie
 c:\users\juanguillermo\documents\visual studio 2013\Projects\SMS.Client\SMS.Client\obj\Debug\SMS.Client.csprojResolveAssemblyReference.cache
 c:\users\juanguillermo\documents\visual studio 2013\Projects\SMS.Client\SMS.Client\obj\Debug\SMS.Client.dll
 c:\users\juanguillermo\documents\visual studio 2013\Projects\SMS.Client\SMS.Client\obj\Debug\SMS.Client.pdb
+C:\Users\JuanGuillermo\Documents\Visual Studio 2013\Projects\SMS.Client\SMS.Client\bin\Clockwork.dll
+C:\Users\JuanGuillermo\Documents\Visual Studio 2013\Projects\SMS.Client\SMS.Client\bin\Clockwork.pdb
