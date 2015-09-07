@@ -1,13 +1,13 @@
 ﻿@model SMS.Client.Models.MessageToSend
 
 @{
-    ViewBag.Title = "SendMessage";
+    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Skeleton.cshtml";
 }
 
 <h2>Enviar Mensaje con ClockWorkSMS</h2>
 
-@using(Html.BeginForm("SendMessage","ClockWorkSMS", FormMethod.Post))
+@using (Html.BeginForm("SendMessage", "ClockWorkSMS", FormMethod.Post))
 {
     <fieldset>
         <label>+57</label>

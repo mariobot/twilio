@@ -1,0 +1,45 @@
+﻿@model Twilio.AddressResult
+
+@{
+    ViewBag.Title = "ListAddress";
+    Layout = "~/Views/Shared/_Skeleton.cshtml";
+}
+
+<h2>Lista de Clientes</h2>
+
+<div class="row">
+    <div class="eight columns">
+        @if (Model != null)
+        {
+            <table>
+                <thead>
+                    <tr>
+		    <td>Edit</td>
+                        <td>CustomerName</td>
+                        <td>Street</td>
+                        <td>City</td>
+                        <td>Region</td>
+                        <td>PostalCode</td>
+                        <td>Iso_Country</td>
+                        <td>FriendlyName</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Addresses)
+                    {
+                        <tr>
+		        <td>@Html.ActionLink(" Edit ", "Edit", "SendSMS", new { idCustomer=item.Sid }, new {@class="button"})</td>
+		        <td>@item.CustomerName</td>
+                            <td>@item.Street</td>
+                            <td>@item.City</td>
+                            <td>@item.Region</td>
+                            <td>@item.PostalCode</td>
+                            <td>@item.IsoCountry</td>
+		        <td>@item.FriendlyName</td>
+		    </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>

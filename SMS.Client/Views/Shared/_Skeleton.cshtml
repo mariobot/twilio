@@ -36,7 +36,6 @@
     <link rel="apple-touch-icon" href="@Url.Content("~/Content/Images/apple-touch-icon.png")">
     <link rel="apple-touch-icon" sizes="72x72" href="@Url.Content("~/Content/Images/apple-touch-icon-72x72.png")">
     <link rel="apple-touch-icon" sizes="114x114" href="@Url.Content("~/Content/Images/apple-touch-icon-114x114.png")">
-
 </head>
 <body>
 
@@ -55,10 +54,17 @@
                         @Html.ActionLink("Enviar Mensaje", "Index", "SendSMS")
                     </div>
                     <div class="three column">
-                        @Html.ActionLink("Lista Mensajes Enviados", "GetMessages","SendSMS")
+                        @Html.ActionLink("Lista Mensajes Enviados", "GetMessages", "SendSMS")
                     </div>
-                    <div class="three column"></div>
-                    <div class="three column"></div>
+                    <div class="three column">
+                        @Html.ActionLink("Enviar Mensaje ClockWorkSMS", "Index", "ClockWorkSMS")
+                    </div>
+                    <div class="three column">
+                        @Html.ActionLink("Adicionar Clientes", "Addresses", "SendSMS")
+                    </div>
+                    <div class="three column">
+                        @Html.ActionLink("Lista Clientes", "ListAddress", "SendSMS")
+                    </div>
                 </div>
                 <hr />
 
