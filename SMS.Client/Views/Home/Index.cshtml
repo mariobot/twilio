@@ -3,13 +3,23 @@
     Layout = "~/Views/Shared/_Skeleton.cshtml";
 }
 
-<h2>Index</h2>
+<div class="row">
+    <div class="three columns">
+        <h1>Twilio</h1>
+        <p>Servicio para enviar mensajes de texto, validaciones de autenticacion, hacer llamadas etc</p>
+        <a href="@Url.Action("Index", "SendSMS")" target="_blank" class="button">Enviar Mensaje</a>
+        <a href="@Url.Action("GetMessages", "SendSMS")" target="_blank" class="button">Mensajes Enviados</a>
+    </div>
+    <div class="three columns">
+        <h1>ClockWorkSMS</h1>
+        <p>Servicio para enviar mensajes de texto</p>
+        <a href="@Url.Action("Index", "ClockWorkSMS")" target="_blank" class="button">Enviar Mensaje</a>
+    </div>
+</div>
+<div class="row">
+    <div class="four columns"></div>
+    <div class="four columns"></div>
+</div>
 
-<h3>@Html.ActionLink("Enviar Mensajes de Texto","Index","SendSMS")</h3>
 
-<a href="~/Content/Skeleton/_Examples/Form.html">Example Form</a>
-<a href="~/Content/Skeleton/_Examples/Grid.html">Example Grid</a>
-<a href="~/Content/Skeleton/_Examples/Typography.html">Example Typography</a>
-
-<hr />
 

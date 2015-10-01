@@ -45,6 +45,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Clockwork, Version=1.2.0.17472, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Clockwork.1.2\lib\net45\Clockwork.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="RestSharp, Version=105.2.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharp.105.2.2\lib\net45\RestSharp.dll</HintPath>
@@ -140,6 +144,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ClockWorkSMSController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SendSMSController.cs" />
     <Compile Include="Global.asax.cs">
@@ -231,7 +236,9 @@
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -241,14 +248,16 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\Skeleton.Master" />
     <Content Include="Views\Shared\_Skeleton.cshtml" />
     <Content Include="Views\SendSMS\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\SendSMS\GetMessages.cshtml" />
     <Content Include="Views\SendSMS\GetMessageById.cshtml" />
+    <Content Include="Views\ClockWorkSMS\Index.cshtml" />
+    <Content Include="Views\SendSMS\Addresses.cshtml" />
+    <Content Include="Views\SendSMS\ListAddress.cshtml" />
+    <Content Include="Views\SendSMS\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

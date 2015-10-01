@@ -1,0 +1,31 @@
+﻿@model Twilio.Address
+
+@{
+    ViewBag.Title = "Addresses";
+    Layout = "~/Views/Shared/_Skeleton.cshtml";
+}
+
+<div class="row">
+    @using (@Html.BeginForm("addAddress", "SendSMS", FormMethod.Post))
+    {
+        <fieldset>
+            <label>Customer Name:</label>
+            @Html.TextBoxFor(m => m.CustomerName)        
+            <label>Street</label>
+            @Html.TextBoxFor(m => m.Street)
+            <label>City</label>
+            @Html.TextBoxFor(m => m.City)
+            <label>Region</label>
+            @Html.TextBoxFor(m => m.Region)
+            <label>Postal Code</label>
+            @Html.TextBoxFor(m => m.PostalCode)
+            <label>Iso Country</label>
+            @Html.TextBoxFor(m => m.IsoCountry)
+            <label>Friendly Name</label>
+            @Html.TextBoxFor(m => m.FriendlyName)
+
+            <input type="submit" name="name" value="Save Customer" />
+
+        </fieldset>
+    }
+</div>
