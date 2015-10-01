@@ -21,5 +21,13 @@ namespace SMS.Client.Controllers
 	  return View();
         }
 
+        public ActionResult Home()
+        {
+            return View();
+        }
+
+        public ActionResult Directory()
+        { return View(); }
+
     }
 }
