@@ -29,3 +29,40 @@ c:\users\juanguillermo\documents\visual studio 2013\Projects\SMS.Client\SMS.Clie
 c:\users\juanguillermo\documents\visual studio 2013\Projects\SMS.Client\SMS.Client\obj\Debug\SMS.Client.csprojResolveAssemblyReference.cache
 c:\users\juanguillermo\documents\visual studio 2013\Projects\SMS.Client\SMS.Client\obj\Debug\SMS.Client.dll
 c:\users\juanguillermo\documents\visual studio 2013\Projects\SMS.Client\SMS.Client\obj\Debug\SMS.Client.pdb
+C:\mariobot\SMS.Client\bin\SMS.Client.dll.config
+C:\mariobot\SMS.Client\bin\SMS.Client.dll
+C:\mariobot\SMS.Client\bin\SMS.Client.pdb
+C:\mariobot\SMS.Client\bin\Antlr3.Runtime.dll
+C:\mariobot\SMS.Client\bin\EntityFramework.dll
+C:\mariobot\SMS.Client\bin\Microsoft.Web.Infrastructure.dll
+C:\mariobot\SMS.Client\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\mariobot\SMS.Client\bin\Newtonsoft.Json.dll
+C:\mariobot\SMS.Client\bin\RestSharp.dll
+C:\mariobot\SMS.Client\bin\System.Net.Http.Formatting.dll
+C:\mariobot\SMS.Client\bin\System.Web.Http.dll
+C:\mariobot\SMS.Client\bin\System.Web.Http.WebHost.dll
+C:\mariobot\SMS.Client\bin\System.Web.Mvc.dll
+C:\mariobot\SMS.Client\bin\System.Web.Optimization.dll
+C:\mariobot\SMS.Client\bin\System.Web.Providers.dll
+C:\mariobot\SMS.Client\bin\System.Web.Razor.dll
+C:\mariobot\SMS.Client\bin\System.Web.WebPages.Deployment.dll
+C:\mariobot\SMS.Client\bin\System.Web.WebPages.dll
+C:\mariobot\SMS.Client\bin\System.Web.WebPages.Razor.dll
+C:\mariobot\SMS.Client\bin\Twilio.Api.dll
+C:\mariobot\SMS.Client\bin\WebGrease.dll
+C:\mariobot\SMS.Client\bin\RestSharp.xml
+C:\mariobot\SMS.Client\bin\EntityFramework.xml
+C:\mariobot\SMS.Client\bin\Newtonsoft.Json.xml
+C:\mariobot\SMS.Client\bin\System.Net.Http.Formatting.xml
+C:\mariobot\SMS.Client\bin\System.Web.Http.xml
+C:\mariobot\SMS.Client\bin\System.Web.Http.WebHost.xml
+C:\mariobot\SMS.Client\bin\System.Web.Mvc.xml
+C:\mariobot\SMS.Client\bin\System.Web.Razor.xml
+C:\mariobot\SMS.Client\bin\System.Web.WebPages.xml
+C:\mariobot\SMS.Client\bin\System.Web.WebPages.Deployment.xml
+C:\mariobot\SMS.Client\bin\System.Web.WebPages.Razor.xml
+C:\mariobot\SMS.Client\bin\Twilio.Api.pdb
+C:\mariobot\SMS.Client\bin\Twilio.Api.xml
+C:\mariobot\SMS.Client\obj\Debug\SMS.Client.csprojResolveAssemblyReference.cache
+C:\mariobot\SMS.Client\obj\Debug\SMS.Client.dll
+C:\mariobot\SMS.Client\obj\Debug\SMS.Client.pdb
